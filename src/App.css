@@ -1,0 +1,24 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Or 'row' if you want them side by side */
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-section, .gallery-section {
+  margin: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row; /* Side by side on larger screens */
+  }
+
+  .login-section, .gallery-section {
+    width: 50%; /* Take half the screen each */
+  }
+}
